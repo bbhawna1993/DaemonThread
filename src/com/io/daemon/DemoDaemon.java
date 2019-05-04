@@ -10,9 +10,14 @@ public class DemoDaemon {
          after it is started,if we change the daemon nature then it will throw
          IllegalThreadStateException.
 		 */
-		System.out.println(Thread.currentThread().isDaemon()); 
+		Mythread t=new Mythread();
+		System.out.println(t.isDaemon());
+		t.setDaemon(true);
+		t.start();
+		System.out.println("main thread"); 
 		//Thus it threw IllegalThreadStateException.
 		//Thread.currentThread().setDaemon(true);
+
 	}
 
 }
