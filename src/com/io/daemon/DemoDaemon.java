@@ -10,7 +10,9 @@ public class DemoDaemon {
          after it is started,if we change the daemon nature then it will throw
          IllegalThreadStateException.
 		 */
-		System.out.println(Thread.currentThread().isDaemon());
+		System.out.println(Thread.currentThread().isDaemon()); 
+		//Thus it threw IllegalThreadStateException.
+		Thread.currentThread().setDaemon(true);
 	}
 
 }
