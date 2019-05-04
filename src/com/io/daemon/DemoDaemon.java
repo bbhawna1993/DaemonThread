@@ -12,7 +12,7 @@ public class DemoDaemon {
 		 */
 		System.out.println(Thread.currentThread().isDaemon()); 
 		//Thus it threw IllegalThreadStateException.
-		Thread.currentThread().setDaemon(true);
+		//Thread.currentThread().setDaemon(true);
 	}
 
 }
